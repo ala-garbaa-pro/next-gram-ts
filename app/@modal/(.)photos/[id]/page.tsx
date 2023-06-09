@@ -16,7 +16,8 @@ export default function PhotoModal({
 
   return (
     <Modal>
-      <Photo photo={photo} />
+      {photo && <Photo photo={photo} />}
+      {!photo && "Photo not found"}
     </Modal>
   );
 }
